@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <iostream>
 int main(){
     extern void print_scaled(int array[3][3], int scale);
 int scale = 3;
