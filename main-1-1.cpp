@@ -2,10 +2,10 @@
 
 using namespace std;
 
-extern void printer(int array[10][10]);
+extern void print_matrix(int array[10][10]);
 
 int main() {
-    int arr[][10] = {
+    int array[][10] = {
             {0, 2, 3, 4, 5, 6, 7, 8, 9, 10},
             {1, 0, 3, 4, 5, 6, 7, 8, 9, 10},
             {1, 2, 0, 4, 5, 6, 7, 8, 9, 10},
@@ -17,7 +17,7 @@ int main() {
             {1, 2, 3, 4, 5, 6, 7, 8, 0, 10},
             {1, 2, 3, 4, 5, 6, 7, 8, 9, 0},
     };
-    printer(arr);
+    print_matrix(array);
     return 0;
 }
 
