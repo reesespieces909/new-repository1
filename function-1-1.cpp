@@ -1,17 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int sum_diagonal(int array[4][4]){
-
-
-
-int diagTotal=0;
-int i;
-
-for ( i= 0; i<4; ++i)
-
-diagTotal = diagTotal + array[i][i];
-
-return diagTotal;
-
+void printer(int array[10][10]) {
+    for (int i = 0; i < 10; ++i) {
+        for (int j = 0; j < 10; ++j) {
+            cout << array[i][j] << " ";
+        }
+        cout << endl;
+    }
 }

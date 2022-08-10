@@ -1,10 +1,23 @@
 #include <iostream>
+
 using namespace std;
 
-int main() {
- int array[4][4]= {{1, 2, 3, 4}, {5,6,7,8}, {9,10,11,12}, {13,14,15,16}};
-extern int sum_diagonal(int array[4][4]);
+extern void printer(int array[10][10]);
 
-cout << "The sum of the diagonals are =  " << sum_diagonal (array)<< endl;
+int main() {
+    int arr[][10] = {
+            {0, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+            {1, 0, 3, 4, 5, 6, 7, 8, 9, 10},
+            {1, 2, 0, 4, 5, 6, 7, 8, 9, 10},
+            {1, 2, 3, 0, 5, 6, 7, 8, 9, 10},
+            {1, 2, 3, 4, 0, 6, 7, 8, 9, 10},
+            {1, 2, 3, 4, 5, 0, 7, 8, 9, 10},
+            {1, 2, 3, 4, 5, 6, 0, 8, 9, 10},
+            {1, 2, 3, 4, 5, 6, 7, 0, 9, 10},
+            {1, 2, 3, 4, 5, 6, 7, 8, 0, 10},
+            {1, 2, 3, 4, 5, 6, 7, 8, 9, 0},
+    };
+    printer(arr);
     return 0;
 }
+
