@@ -7,41 +7,41 @@ bool is_array_palindrome(int integers[],int length);
 int palindrome_sum(int integers[],int length){
 if(length>0){
 if(is_array_palindrome(integers,length)){
-int s=sum_integers(integers,length);
-return s; //return sum of elements
+int t=sum_integers(integers,length);
+return t; 
 } 
 else{
-return -2; //return -2 if is_a_palindrome returned value is false
+return -2; 
 }
 }
 else{
-return -1; //return -1 if length is less than 1
+return -1; 
 }
 }
 int sum_integers(int integers[],int length){
 int sum=0;
 for(int i=0;i<length;i++){
-sum=sum+integers[i]; //add elements in sum variable
+sum=sum+integers[i]; 
 }
-return sum; //return sum
+return sum; 
 }
 
 bool is_array_palindrome(int integers[],int length){
 if(length>0){
-int flag=0;
+int pal=0;
 for(int i=0,j=length-1;i<length,j>=0;i++,j--){
 if(integers[i]!=integers[j]){
-flag++;
+pal++;
 break;
 }
 }
-if(flag==0){
-return true; //return true if flag==0 means palindrome
+if(pal==0){
+return true; 
 }else{
-return false; //return false if flag not equal 0 
+return false; 
 } 
 }
 else{
-return false; //return false if length is less than 1
+return false; 
 }
 }
