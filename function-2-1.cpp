@@ -1,15 +1,22 @@
+#include<string>
 #include <iostream>
-#include <cstring>
 using namespace std;
 
-void print_binary_str(std::string decimal_number) {
-        int num = stoi(decimal_number);
 
-        string s = "";
-        while(num != 0) {
-                s = (char)('0' + (num%2)) + s;
-                num = num / 2;
+string month_lookup(int month)
+{
+    
+    string months[12] = {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep",
+                    "Oct","Nov","Dec"};
+                
+    string answer;  
+    
+    if(month<1 || month>12)     
+        answer="Invalid month";
+    else                        
+        answer = months[month-1];
         
-        return ;
-        }  
+    return answer;      
 }
+
+

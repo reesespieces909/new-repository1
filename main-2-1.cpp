@@ -1,12 +1,15 @@
-#include <iostream>
-#include <cstring>
+#include<iostream>
+#include <string>
+
 using namespace std;
 
 int main(){
-std::string decimal_number;
-    extern void print_binary_str(std::string decimal_number);
-        
-        cout << "  " << print_binary_str(decimal_number) << endl;
-        
-        return 0;
+    extern string month_lookup(int month);
+    cout<< month_lookup(3) << endl;
+    cout<< month_lookup(4) << endl;
+    cout<< month_lookup(22) << endl;
+    cout<< month_lookup(-9) << endl;
+    
+    
+    return 0;
 }
