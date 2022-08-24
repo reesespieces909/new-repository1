@@ -12,7 +12,7 @@ string month_lookup(int month)
     string answer;  
     
     if(month<1 || month>12)     
-        answer="Invalid month";
+        answer="invalid month";
     else                        
         answer = months[month-1];
         

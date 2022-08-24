@@ -11,8 +11,4 @@ extern int* matrix_min_max(int** vals, int num_rows, int num_cols);
 	int num_rows = 3;
 	int num_cols = 3;
 	
-	int *mm = matrix_min_max(vals, num_rows, num_cols);
-	
-	cout << mm[0] << " " << mm[1] << endl;
-	return 0;
-}
+	int 
