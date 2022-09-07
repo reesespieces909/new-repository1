@@ -1,17 +1,14 @@
-#include <iostream>
 #include "Cage.h"
-
+#include <iostream>
 using namespace std;
 
 int main()
 {
-//Cage object
-Cage obj1(1001, "Parrot");
-
-//Printing result
-cout << "\nOccupant ID: " << obj1.get_id_number();
-cout << "\nOccupant Name: " << obj1.get_name() << "\n\n";
-
-return 0;
+    // create an instance of Cage instance
+    Cage cage(100, "cages");
+    // display cage details
+    std::cout << "Occupant name: " << cage.get_name() << std::endl;
+    std::cout << "ID Number: " << cage.get_ID_number() << std::endl;
+    return 0;
 }
 

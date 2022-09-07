@@ -1,35 +1,24 @@
-#include<iostream>
 #include "Cage.h"
 
-using namespace std;
-
-//Default Constructor
-Cage::Cage()
-{
-occupantName = "";
-IDNumber = 0;
+// a default constructor ID number is zero and occupant name is an empty string ""
+Cage :: Cage(){
+    id = 0;
+    occupant = "";
 }
-
-//Argument Constructor
-Cage::Cage(int newNumber, string newName)
-{
-occupantName = newName;
-IDNumber = newNumber;
+ // a constructor that takes the ID number and occupant name
+Cage :: Cage(int newNumber, std::string newName){
+    id = newNumber;
+    occupant = newName;
 }
-
-//Getter methods
-string Cage::get_name()
-{
-return occupantName;
+// returns the name of the cage occupant
+std::string Cage ::  get_name(){
+    return occupant;
 }
-
-int Cage::get_id_number()
-{
-return IDNumber;
+// returns the cage's ID number
+int Cage :: get_ID_number(){
+    return id;
 }
-
-//Destructor
-Cage::~Cage()
-{
-cout << "\nDestructor\n";
+// destructor
+Cage :: ~Cage(){
+    
 }
