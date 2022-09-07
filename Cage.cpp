@@ -1,5 +1,7 @@
 #include "Cage.h"
+#include <iostream>
 
+#include <sstream>
 // a default constructor ID number is zero and occupant name is an empty string ""
 Cage :: Cage(){
     id = 0;
