@@ -1,10 +1,17 @@
 #include <iostream>
+#include "Cage.h"
+
 using namespace std;
 
-int main() {
- int array[4][4]= {{1, 2, 3, 4}, {5,6,7,8}, {9,10,11,12}, {13,14,15,16}};
-extern int sum_diagonal(int array[4][4]);
+int main()
+{
+//Cage object
+Cage obj1(1001, "Parrot");
 
-cout << "The sum of the diagonals are =  " << sum_diagonal (array)<< endl;
-    return 0;
+//Printing result
+cout << "\nOccupant ID: " << obj1.get_id_number();
+cout << "\nOccupant Name: " << obj1.get_name() << "\n\n";
+
+return 0;
 }
+
