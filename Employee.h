@@ -20,6 +20,6 @@ public:
     void set_energyLevel(float energyLevel);
     
     
-     virtual void work(int mins) = 0;
-virtual float pay()= 0;
+     virtual void work(int mins);
+virtual float pay();
 };
