@@ -1,12 +1,24 @@
-#include <iostream>
-#include <cstring>
-using namespace std;
+// Include the required header files
+#include "Employee.h"
+#include "Employee.cpp"
+#include "Casual.h"
+#include "Casual.cpp"
+// Define the constructor.
+int main() {
 
-int main(){
-std::string decimal_number;
-    extern void print_binary_str(std::string decimal_number);
-        
-        cout << "  " << print_binary_str(decimal_number) << endl;
-        
-        return 0;
 }
+
+animal::animal(string n ,int v){
+animalID++;
+name=n;
+volume =v;
+1
+// Define the member functions.
+void animal:: set_name (string n){
+name=n;
+void animal:: set volume (int v){
+volume =V;
+int animal:: get_volume(){
+return volume;
+int animal:: get_animalID(){
+return animalID;

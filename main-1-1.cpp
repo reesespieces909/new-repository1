@@ -1,17 +1,22 @@
-#include "Cage.h"
-#include <iostream>
+// Include the required header files
+#include "Employee.h"
+#include "Employee.cpp"
+// Define the constructor.
+int main() {
 
-
-#include <sstream>
-using namespace std;
-
-int main()
-{
-    // create an instance of Cage instance
-    Cage cage(100, "cages");
-    // display cage details
-    std::cout << "Occupant name: " << cage.get_name() << std::endl;
-    std::cout << "ID Number: " << cage.get_ID_number() << std::endl;
-    return 0;
 }
 
+animal::animal(string n ,int v){
+animalID++;
+name=n;
+volume =v;
+1
+// Define the member functions.
+void animal:: set_name (string n){
+name=n;
+void animal:: set volume (int v){
+volume =V;
+int animal:: get_volume(){
+return volume;
+int animal:: get_animalID(){
+return animalID;
