@@ -8,8 +8,8 @@ protected:
     
 Employee(int payRate)    // creates a Employee with payRate
 
-int payRate // hourly payRate
-float energyLevel   // Initially 100%
+int payRate; // hourly payRate
+float energyLevel;   // Initially 100%
 
 void takeABreak(int mins);
 public:

@@ -1,4 +1,4 @@
-#include "employee.h"
+#include "Employee.h"
 int Employee::get_payRate()
 {
     return this->PayRate;
