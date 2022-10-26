@@ -1,8 +1,7 @@
 #include "Employee.h"
 
 Employee:: Employee (int payRate){
-    payRate= p;
-    energyLevel=
+   
 }
 int Employee::get_payRate()
 {
@@ -10,7 +9,7 @@ int Employee::get_payRate()
 }
 void Employee::set_payRate(int payRate)
 {
-    payRate = p;
+    payRate = payRate;
 }
 
 float Employee::get_energyLevel()

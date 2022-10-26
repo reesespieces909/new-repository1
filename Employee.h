@@ -21,5 +21,5 @@ public:
     
     
      virtual void work(int mins) = 0;
-virtual float pay()= 0
+virtual float pay()= 0;
 };
