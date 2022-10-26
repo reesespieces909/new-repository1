@@ -1,18 +1,23 @@
 #include "Employee.h"
+
+Employee:: Employee (int payRate){
+    payRate= p;
+    energyLevel=
+}
 int Employee::get_payRate()
 {
-    return this->PayRate;
+    return payRate;
 }
 void Employee::set_payRate(int payRate)
 {
-    this->payRate = payRate;
+    payRate = p;
 }
 
 float Employee::get_energyLevel()
 {
-    return this->energyLevel;
+    return energyLevel;
 }
 void Employee::set_energyLevel(float energyLevel)
 {
-    this->energyLevel = energyLevel;
+    energyLevel = energyLevel + 0.02;
 }
